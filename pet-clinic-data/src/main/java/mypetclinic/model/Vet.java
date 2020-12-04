@@ -1,8 +1,8 @@
-package spesce.springframework.mypetclinic.model;
+package mypetclinic.model;
 
 /**
  * Created By Steve P. on 12/4/2020
- * original package: spesce.springframework.mypetclinic.model
+ * original package: mypetclinic.model
  * ------------------------------------------------------------------------------------------
  */
 public class Vet extends Person {

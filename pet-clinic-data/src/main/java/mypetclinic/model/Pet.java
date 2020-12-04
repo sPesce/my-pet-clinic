@@ -1,10 +1,10 @@
-package spesce.springframework.mypetclinic.model;
+package mypetclinic.model;
 
 import java.time.LocalDate;
 
 /**
  * Created By Steve P. on 12/4/2020
- * original package: spesce.springframework.mypetclinic.model
+ * original package: mypetclinic.model
  * ------------------------------------------------------------------------------------------
  */
 public class Pet {
