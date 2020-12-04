@@ -1,5 +1,5 @@
-spesce\springframework\mypetclinic\model\PetType.class
-spesce\springframework\mypetclinic\model\Vet.class
-spesce\springframework\mypetclinic\model\Person.class
-spesce\springframework\mypetclinic\model\Owner.class
-spesce\springframework\mypetclinic\model\Pet.class
+mypetclinic\model\Vet.class
+mypetclinic\model\Owner.class
+mypetclinic\model\PetType.class
+mypetclinic\model\Pet.class
+mypetclinic\model\Person.class
