@@ -8,12 +8,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * original package: spesce.springframework.mypetclinic.controllers
  * ------------------------------------------------------------------------------------------
  */
+
 @Controller
+@RequestMapping({"/owners"})
 public class OwnersControllers {
 
-    @RequestMapping({"/owners","/owners/index","/owners/index.html"})
+    @RequestMapping({"", "/", "/index", "/index.html"})
     public String listOwners() {
         return "owners/index";
     }
-    
+
 }
