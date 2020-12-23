@@ -1,7 +1,7 @@
 package spesce.springframework.mypetclinic.services.map;
 
 import spesce.springframework.mypetclinic.model.Owner;
-import spesce.springframework.mypetclinic.services.CrudService;
+import spesce.springframework.mypetclinic.services.OwnerService;
 
 import java.util.Set;
 
@@ -10,7 +10,8 @@ import java.util.Set;
  * original package: spesce.springframework.mypetclinic.services.map
  * ------------------------------------------------------------------------------------------
  */
-public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements CrudService<Owner,Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements OwnerService {
+
 
     @Override
     public Set<Owner> findAll() {

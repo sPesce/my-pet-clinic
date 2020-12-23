@@ -1,8 +1,7 @@
 package spesce.springframework.mypetclinic.services.map;
 
-import spesce.springframework.mypetclinic.model.Owner;
 import spesce.springframework.mypetclinic.model.Pet;
-import spesce.springframework.mypetclinic.services.CrudService;
+import spesce.springframework.mypetclinic.services.PetService;
 
 import java.util.Set;
 
@@ -11,7 +10,7 @@ import java.util.Set;
  * original package: spesce.springframework.mypetclinic.services.map
  * ------------------------------------------------------------------------------------------
  */
-public class PetServiceMap extends AbstractMapService<Pet,Long> implements CrudService<Pet,Long> {
+public class PetServiceMap extends AbstractMapService<Pet,Long> implements PetService {
 
     @Override
     public Set<Pet> findAll() {

@@ -5,5 +5,5 @@ import spesce.springframework.mypetclinic.model.Pet;
 
 import java.util.Set;
 
-public interface PetServices extends CrudService<Pet,Long>{
+public interface PetService extends CrudService<Pet,Long>{
 }
