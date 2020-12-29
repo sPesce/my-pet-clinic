@@ -1,5 +1,6 @@
 package spesce.springframework.mypetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import spesce.springframework.mypetclinic.model.Owner;
 import spesce.springframework.mypetclinic.services.OwnerService;
 
@@ -10,6 +11,7 @@ import java.util.Set;
  * original package: spesce.springframework.mypetclinic.services.map
  * ------------------------------------------------------------------------------------------
  */
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements OwnerService {
 
 
