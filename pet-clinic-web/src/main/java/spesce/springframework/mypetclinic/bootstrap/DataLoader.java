@@ -3,11 +3,14 @@ package spesce.springframework.mypetclinic.bootstrap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import spesce.springframework.mypetclinic.model.Owner;
+import spesce.springframework.mypetclinic.model.Pet;
 import spesce.springframework.mypetclinic.model.PetType;
 import spesce.springframework.mypetclinic.model.Vet;
 import spesce.springframework.mypetclinic.services.OwnerService;
 import spesce.springframework.mypetclinic.services.PetTypeService;
 import spesce.springframework.mypetclinic.services.VetService;
+
+import java.time.LocalDate;
 
 /**
  * Created By Steve P. on 12/23/2020
@@ -43,14 +46,34 @@ public class DataLoader implements CommandLineRunner {
         Owner owner1 = new Owner();
         owner1.setFirstName("Bob");
         owner1.setLastName("Bobbington");
+        owner1.setAddress("123 Brickerel St");
+        owner1.setCity("Miami");
+        owner1.setTelephone("5712350060");
         ownerService.save(owner1);
+
+        Pet bobsPet = new Pet();
+        bobsPet.setPetType(savedDogPetType);
+        bobsPet.setOwner(owner1);
+        bobsPet.setName("Harley");
+        bobsPet.setBirthDate(LocalDate.now());
+        owner1.getPets().add(bobsPet);
 
         Owner owner2 = new Owner();
         owner2.setFirstName("Fred");
         owner2.setLastName("Freddington");
+        owner2.setAddress("123 Brickerel St");
+        owner2.setCity("Miami");
+        owner2.setTelephone("5712350060");
         ownerService.save(owner2);
         System.out.println("Owners Loaded");
         System.out.println("Loading Vets...");
+
+        Pet fredsPet = new Pet();
+        fredsPet.setBirthDate(LocalDate.now());
+        fredsPet.setName("Squag");
+        fredsPet.setOwner(owner2);
+        fredsPet.setPetType(savedCatPetType);
+        owner2.getPets().add(fredsPet);
 
         Vet vet1 = new Vet();
         vet1.setFirstName("Sam");
