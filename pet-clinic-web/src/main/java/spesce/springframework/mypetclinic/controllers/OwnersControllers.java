@@ -12,7 +12,7 @@ import spesce.springframework.mypetclinic.services.OwnerService;
  */
 
 @Controller
-@RequestMapping({"/owners","/owners/find"})
+@RequestMapping({"/owners"})
 public class OwnersControllers {
 
     private final OwnerService ownerService;
@@ -25,6 +25,11 @@ public class OwnersControllers {
     public String listOwners(Model model) {
         model.addAttribute("owners",ownerService.findAll());
         return "owners/index";
+    }
+
+    @RequestMapping("/find")
+    public String findOwners(){
+        return "notimplemented";
     }
 
 }
